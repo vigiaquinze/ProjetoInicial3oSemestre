@@ -1,0 +1,129 @@
+.site {
+    background-color: #006266;
+}
+
+#compartimentoDinamico {
+    position: relative;
+    height: 429.6px;
+    margin: 25px 0 25px 0;
+    padding: 0;
+}
+
+.elevador {
+    position: relative;
+    margin: 0 8px;
+    background-color: #b1e2ff;
+    width: 50px;
+    height: 429.6px;
+    top: 0px;
+    text-align: center;
+    font-size: 24pt;
+}
+
+.compartimento {
+    position: absolute;
+  	bottom: 0px;
+  	background-color: #71797E;
+    height: 85px;
+    font-size: 12pt;
+    color: #ffffff;
+    font-weight: 500;
+    overflow: hidden;    
+    width: 50%;
+}
+
+
+.compartimento > div {
+    position: relative;
+    top: -340px;
+}
+
+.compartimento > div > div {
+    position: relative;
+    height: 85px;
+}
+
+#botoesSobeDesce {
+    position: relative;
+    height: 366px;
+    padding: 0;
+    margin: 0;
+}
+
+.botoesAndares {
+    height: 85px;
+}
+
+.spanAndares {
+  margin-left: 50px;
+  color: white;
+}
+
+.button {
+    border: none;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #26253d;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.button:hover {
+    background-color: #b1e2ff;
+}
+
+.button:hover .paraCima{ border-bottom: 9px solid #26253d;}
+
+.button > .paraCima {
+	height: 0; 
+	border-left: 8.5px solid transparent;
+	border-right: 8.5px solid transparent;	
+	border-bottom: 9px solid #ffffff;
+}
+
+.button > .paraBaixo {
+	height: 0; 
+	border-left: 8.5px solid transparent;
+	border-right: 8.5px solid transparent;	
+	border-top: 9px solid white;
+}
+
+.button:hover .paraBaixo{ border-top: 9px solid #26253d;}
+
+#floor-buttons-1 button.button.paraBaixo {
+  display: none;
+}
+
+#floor-buttons-5 button.button.paraCima {
+  display: none;
+}
+
+.numeroAndarContainer {
+    border: none;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #26253d;
+    margin-right: 10px;
+}
+
+.labelNumeroAndar {
+  color: rgb(255, 255, 255);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.color-white {
+  color: white;
+}
+
+.containerModoManutencao {
+  margin: 10px 0;
+}
+
+.itemModoManutencao {
+  margin: 0 17px;
+}
