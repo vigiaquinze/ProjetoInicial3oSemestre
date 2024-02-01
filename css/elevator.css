@@ -1,29 +1,53 @@
-.site {
-    background-color: #006266;
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
-#compartimentoDinamico {
+body {
+  background-color: #21225c;
+  font-family: 'Handjet', sans-serif;
+}
+
+.fs-4{
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 80px!important;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+.elevators-body {
+    background-color: #0d0d11;
+}
+
+#dynamicCompartment {
     position: relative;
     height: 429.6px;
     margin: 25px 0 25px 0;
     padding: 0;
 }
 
-.elevador {
+.elevator {
     position: relative;
     margin: 0 8px;
-    background-color: #b1e2ff;
+    background-color: #656a93;
     width: 50px;
-    height: 429.6px;
+    height: 790px;
     top: 0px;
     text-align: center;
     font-size: 24pt;
 }
 
-.compartimento {
+.compartment {
     position: absolute;
   	bottom: 0px;
-  	background-color: #71797E;
+  	background-color: #21225c;
     height: 85px;
     font-size: 12pt;
     color: #ffffff;
@@ -33,28 +57,28 @@
 }
 
 
-.compartimento > div {
+.compartment > div {
     position: relative;
-    top: -340px;
+    top: -715px;
 }
 
-.compartimento > div > div {
+.compartment > div > div {
     position: relative;
-    height: 85px;
+    height: 90px;
 }
 
-#botoesSobeDesce {
+#upDownButtons {
     position: relative;
     height: 366px;
     padding: 0;
     margin: 0;
 }
 
-.botoesAndares {
+.floor-buttons {
     height: 85px;
 }
 
-.spanAndares {
+.span-floor {
   margin-left: 50px;
   color: white;
 }
@@ -70,36 +94,36 @@
 }
 
 .button:hover {
-    background-color: #b1e2ff;
+    background-color: #656a93;
 }
 
-.button:hover .paraCima{ border-bottom: 9px solid #26253d;}
+.button:hover .upSide{ border-bottom: 9px solid #bcc6d7;}
 
-.button > .paraCima {
+.button > .upSide {
 	height: 0; 
 	border-left: 8.5px solid transparent;
 	border-right: 8.5px solid transparent;	
 	border-bottom: 9px solid #ffffff;
 }
 
-.button > .paraBaixo {
+.button > .downSide {
 	height: 0; 
 	border-left: 8.5px solid transparent;
 	border-right: 8.5px solid transparent;	
 	border-top: 9px solid white;
 }
 
-.button:hover .paraBaixo{ border-top: 9px solid #26253d;}
+.button:hover .downSide{ border-top: 9px solid #bcc6d7;}
 
-#floor-buttons-1 button.button.paraBaixo {
+#floor-buttons-1 button.button.downSide {
   display: none;
 }
 
-#floor-buttons-5 button.button.paraCima {
+#floor-buttons-9 button.button.upSide {
   display: none;
 }
 
-.numeroAndarContainer {
+.floor-number-container {
     border: none;
     border-radius: 50%;
     height: 30px;
@@ -108,7 +132,7 @@
     margin-right: 10px;
 }
 
-.labelNumeroAndar {
+.floor-number-label {
   color: rgb(255, 255, 255);
 }
 
@@ -120,10 +144,15 @@
   color: white;
 }
 
-.containerModoManutencao {
+.maintenance-mode-container {
   margin: 10px 0;
 }
 
-.itemModoManutencao {
+.maintenance-mode-item {
   margin: 0 17px;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+  font-size: 25px;
 }
