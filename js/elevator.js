@@ -12,7 +12,33 @@
                 var j, upDownButtons;
                 upDownButtons = [];
                 for (floor = j = me.floors; j >= 1; floor = j += -1) {
-                    upDownButtons.push(`<div id = 'floor-buttons-${floor}' class='floor-buttons d-flex align-items-center'><div class="floor-number-container d-flex align-items-center justify-content-center"><label class="floor-number-label">${floor}</label></div><button class='button upSide' data-floor='${floor}'><div class='upSide'></div></button><button class='button downSide' data-floor='${floor}'><div class='downSide'></div></button></div>`);
+                    if (floor==9) {
+                    upDownButtons.push(`<div id = 'floor-buttons-9' class='floor-buttons d-flex align-items-center'><div class="floor-number-container d-flex align-items-center justify-content-center"><label class="floor-number-label">6</label></div><button class='button upSide' data-floor='9'><div class='upSide'></div></button><button class='button downSide' data-floor='9'><div class='downSide'></div></button></div>`);
+                    }
+                    if (floor==8) {
+                    upDownButtons.push(`<div id = 'floor-buttons-8' class='floor-buttons d-flex align-items-center'><div class="floor-number-container d-flex align-items-center justify-content-center"><label class="floor-number-label">5</label></div><button class='button upSide' data-floor='8'><div class='upSide'></div></button><button class='button downSide' data-floor='8'><div class='downSide'></div></button></div>`);
+                    }
+                    if (floor==7) {
+                    upDownButtons.push(`<div id = 'floor-buttons-7' class='floor-buttons d-flex align-items-center'><div class="floor-number-container d-flex align-items-center justify-content-center"><label class="floor-number-label">4</label></div><button class='button upSide' data-floor='7'><div class='upSide'></div></button><button class='button downSide' data-floor='7'><div class='downSide'></div></button></div>`);
+                    }
+                    if (floor==6) {
+                    upDownButtons.push(`<div id = 'floor-buttons-6' class='floor-buttons d-flex align-items-center'><div class="floor-number-container d-flex align-items-center justify-content-center"><label class="floor-number-label">3</label></div><button class='button upSide' data-floor='6'><div class='upSide'></div></button><button class='button downSide' data-floor='6'><div class='downSide'></div></button></div>`);
+                    }
+                    if (floor==5) {
+                    upDownButtons.push(`<div id = 'floor-buttons-5' class='floor-buttons d-flex align-items-center'><div class="floor-number-container d-flex align-items-center justify-content-center"><label class="floor-number-label">2</label></div><button class='button upSide' data-floor='5'><div class='upSide'></div></button><button class='button downSide' data-floor='5'><div class='downSide'></div></button></div>`);
+                    }
+                    if (floor==4) {
+                    upDownButtons.push(`<div id = 'floor-buttons-4' class='floor-buttons d-flex align-items-center'><div class="floor-number-container d-flex align-items-center justify-content-center"><label class="floor-number-label">1</label></div><button class='button upSide' data-floor='4'><div class='upSide'></div></button><button class='button downSide' data-floor='4'><div class='downSide'></div></button></div>`);
+                    }
+                    if (floor==3) {
+                    upDownButtons.push(`<div id = 'floor-buttons-3' class='floor-buttons d-flex align-items-center'><div class="floor-number-container d-flex align-items-center justify-content-center"><label class="floor-number-label">T</label></div><button class='button upSide' data-floor='3'><div class='upSide'></div></button><button class='button downSide' data-floor='3'><div class='downSide'></div></button></div>`);
+                    }
+                    if (floor==2) {
+                    upDownButtons.push(`<div id = 'floor-buttons-2' class='floor-buttons d-flex align-items-center'><div class="floor-number-container d-flex align-items-center justify-content-center"><label class="floor-number-label">S1</label></div><button class='button upSide' data-floor='2'><div class='upSide'></div></button><button class='button downSide' data-floor='2'><div class='downSide'></div></button></div>`);
+                    }
+                    if (floor==1) {
+                    upDownButtons.push(`<div id = 'floor-buttons-1' class='floor-buttons d-flex align-items-center'><div class="floor-number-container d-flex align-items-center justify-content-center"><label class="floor-number-label">S2</label></div><button class='button upSide' data-floor='1'><div class='upSide'></div></button><button class='button downSide' data-floor='1'><div class='downSide'></div></button></div>`);
+                    }
                 }
                 return upDownButtons;
             })()).join('');
